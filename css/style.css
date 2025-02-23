@@ -1,0 +1,53 @@
+h1 {
+}
+
+.stMainBlockContainer {
+  padding: 2.5rem 13rem 1rem;
+}
+
+.stHorizontalBlock .stHeadingWithActionElements h1 {
+  padding: 0rem 0px 0.5rem;
+}
+
+.stVerticalBlock .stHorizontalBlock {
+  margin-top: 20px;
+}
+
+.stHeading {
+  margin-top: -25px;
+}
+
+.stElementContainer .stButton {
+  margin-top: -15px;
+  color: #b62626;
+}
+
+.stSelectbox
+  [data-testid="stWidgetLabel"]
+  [data-testid="stMarkdownContainer"]
+  p {
+  font-size: 18px;
+  color: #b62626;
+  font-weight: bold;
+}
+
+.stNumberInput
+  [data-testid="stWidgetLabel"]
+  [data-testid="stMarkdownContainer"]
+  p {
+  font-size: 18px;
+  color: #b62626;
+  font-weight: bold;
+}
+
+.stAlert .stAlertContainer {
+  margin-top: -20px;
+}
+
+.stHeading h3 {
+  margin-top: 10px;
+}
+
+[data-testid="stHeadingWithActionElements"] h1 {
+  color: #b62626;
+}

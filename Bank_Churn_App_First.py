@@ -8,7 +8,7 @@ with open("Bank_Churn_Loads.pkl","rb") as f:
     dit = pickle.load(f)
 
 # Header
-# st.set_page_config(page_title="Churn Prediction",page_icon=r"img\Page_Icon.png",layout="wide")
+st.set_page_config(page_title="Churn Prediction")
 
 st.title("Bank Churn Prediction")
 

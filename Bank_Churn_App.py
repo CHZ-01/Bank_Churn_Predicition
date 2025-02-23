@@ -67,7 +67,7 @@ class Pages:
 
         st.session_state.Marriage = intro.selectbox("Marital Status:",["Single","Married","Divorced"],None)
 
-        b1,btn1,btn2,err,b2 = st.columns([1.5,1.5,1.5,2.5,3.4],vertical_alignment="top")
+        b1,btn1,btn2,err,b2 = st.columns([1.6,1.5,1.5,3.2,3.4],vertical_alignment="top")
         
         # Back Button
         first_back = btn1.button("Back",key="first_back") 
@@ -95,7 +95,7 @@ class Pages:
 
         st.session_state.Communication = intro.selectbox("Communication Preference:",["Email","Phone"],None)
 
-        b1,btn1,btn2,err,b2 = st.columns([1.5,1.5,1.5,2.5,3.4],vertical_alignment="top")
+        b1,btn1,btn2,err,b2 = st.columns([1.6,1.5,1.5,3.2,3.4],vertical_alignment="top")
         
         # Back Button
         second_back = btn1.button("Back",key="second_back") 
@@ -123,7 +123,7 @@ class Pages:
 
         st.session_state.Balance = intro.number_input("Balance:",1,250000,None)
 
-        b1,btn1,btn2,err,b2 = st.columns([1.5,1.5,1.5,2.5,3.4],vertical_alignment="top")
+        b1,btn1,btn2,err,b2 = st.columns([1.7,1.5,1.7,3.3,3.4],vertical_alignment="top")
         
         # Back Button
         third_back = btn1.button("Back",key="third_back") 
@@ -167,7 +167,7 @@ class Pages:
             intro.write("This customer is at risk of churning! Based on our analysis, their engagement and transaction patterns indicate a high likelihood of leaving.")  
             intro.write("Take action now to retain them and improve customer satisfaction!")
         else:
-            intro.subheader("Congrats!")  
+            intro.subheader("Great News!")  
             intro.write("This customer is engaged and showing strong retention! Our analysis confirms their continued loyalty and positive interactions.")  
             intro.write("Keep up the great service to maintain their satisfaction and long-term relationship!")
 
