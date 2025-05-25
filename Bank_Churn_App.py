@@ -119,7 +119,7 @@ class Pages:
 
         st.session_state.Credit_Length = intro.number_input("Credit History Length:",1,30,None)
 
-        st.session_state.Outstanding_Loans = intro.number_input("Outstanding_Loans:",1000,50000,None)
+        st.session_state.Outstanding_Loans = intro.number_input("Outstanding_Loans:",0,50000,None)
 
         st.session_state.Balance = intro.number_input("Balance:",1,250000,None)
 
@@ -162,8 +162,8 @@ class Pages:
 
         predict = dit["Model"].predict(scaled)
 
-        if predict == 0:
-            intro.subheader("Sorry,")  
+        if predict == 1:
+            intro.subheader("Warning,")  
             intro.write("This customer is at risk of churning! Based on our analysis, their engagement and transaction patterns indicate a high likelihood of leaving.")  
             intro.write("Take action now to retain them and improve customer satisfaction!")
         else:

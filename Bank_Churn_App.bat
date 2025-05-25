@@ -1,0 +1,1 @@
+streamlit run Bank_Churn_App.py
